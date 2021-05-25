@@ -4,3 +4,54 @@
     border: 0;
     box-sizing: border-box;
 }
+
+.content{
+    /*background-color: sienna; */
+    background-color: #555;
+}
+
+/* стили заголовка */
+.header__content{
+    background-color: #ccc;
+    width: 40%;
+    margin: 30px auto;
+}
+.header__heading{
+    text-align: center;
+}
+.header__button__info{
+    font-size: 50%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #555;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: 0 10px;
+}
+.header__subtitle{
+    display: none;
+    transition: top 1s ease-out 0.5s;
+}
+
+/* .header__subtitle::before,
+.header__subtitle::after{
+    content: "";
+    position: relative;
+    margin: 5px 10px;
+    background-color: aqua;
+    
+}
+
+.header__subtitle::before{
+    top: 0;
+}
+
+.header__subtitle::after{
+    bottom: 0;
+} */
+
+.header__subtitle.active{
+    display: block;
+    top: 0px;
+}

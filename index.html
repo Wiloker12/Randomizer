@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
     <title>Document</title>
+    <script src="script/script.js"></script>
+    <script>
+        "use strict";
+
+        document.addEventListener('DOMContentLoaded', function(event){
+            document.querySelector('.header__button__info').addEventListener('click', clickButtonInfo);
+        });
+    </script>
 </head>
 <body>
     <div class="content">
         <div class="header__content">
-            <h1 class="header__heading">Header<span class="header__button__info">?</span></h1>
+            <h1 class="header__heading">Header <span class="header__button__info">?</span></h1>
             <p class="header__subtitle">добавить знак "?" при клике на который выдвегается данный текст</p>
         </div>
         <div class="options__content">
